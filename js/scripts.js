@@ -40,11 +40,11 @@ function getTrack(readiness, worktype, workplace, interests, activities, values)
     Score=considerValues(values, Score);
     //compare scores for each track and return string for best track
     var results="<h2>Your Results Are: </h2><ul>"
-      + "<li>C#/.NET: " + Score.csharp/5*100 + "%</li>"
-      + "<li>CSS/Design: " + Score.design/5*100 + "%</li>"
-      + "<li>Java/Android: " + Score.java/5*100 + "%</li>"
-      + "<li>Ruby/Rails: " + Score.csharp/5*100 + "%</li>"
-      + "<li>PHP/Drupal: " + Score.php/5*100 + "%</li>"
+      + "<li class='csharp'>C#/.NET: " + Score.csharp/5*100 + "%</li>"
+      + "<li class='design'>CSS/Design: " + Score.design/5*100 + "%</li>"
+      + "<li class='java'>Java/Android: " + Score.java/5*100 + "%</li>"
+      + "<li class='ruby'>Ruby/Rails: " + Score.csharp/5*100 + "%</li>"
+      + "<li class='php'>PHP/Drupal: " + Score.php/5*100 + "%</li>"
     return(results);
   }
 
