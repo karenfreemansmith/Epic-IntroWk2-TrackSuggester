@@ -17,11 +17,11 @@ $(document).ready(function() {
   function showResults(readiness, worktype, workplace, interests, activities, values) {
     var Score=getTrack(readiness, worktype, workplace, interests, activities, values);
     var results="<ul>"
-      + "<li class='csharp' style='width: "+Score.csharp/5*100+"%'>C#/.NET: " + Score.csharp/5*100 + "%</li>"
-      + "<li class='design' style='width: "+Score.design/5*100+"%'>CSS/Design: " + Score.design/5*100 + "%</li>"
-      + "<li class='java' style='width: "+Score.java/5*100+"%'>Java/Android: " + Score.java/5*100 + "%</li>"
-      + "<li class='ruby' style='width: "+Score.ruby/5*100+"%'>Ruby/Rails: " + Score.ruby/5*100 + "%</li>"
-      + "<li class='php' style='width: "+Score.php/5*100+"%'>PHP/Drupal: " + Score.php/5*100 + "%</li>"
+      + "<li class='csharp' style='width: "+Score.csharp+"%'>C#/.NET: " + Score.csharp + "%</li>"
+      + "<li class='design' style='width: "+Score.design+"%'>CSS/Design: " + Score.design + "%</li>"
+      + "<li class='java' style='width: "+Score.java+"%'>Java/Android: " + Score.java + "%</li>"
+      + "<li class='ruby' style='width: "+Score.ruby+"%'>Ruby/Rails: " + Score.ruby + "%</li>"
+      + "<li class='php' style='width: "+Score.php+"%'>PHP/Drupal: " + Score.php + "%</li>"
       + "</ul>";
     $("#results").html(results);
     $("form#survey").hide();
@@ -45,6 +45,11 @@ function getTrack(readiness, worktype, workplace, interests, activities, values)
     Score=considerInterests(interests, Score);
     Score=considerActivities(activities, Score);
     Score=considerValues(values, Score);
+    Score.csharp=Score.csharp/5*100; //converts raw score to percentage
+    Score.design=Score.design/5*100;
+    Score.java=Score.java/5*100;
+    Score.ruby=Score.ruby/5*100;
+    Score.php=Score.php/5*100;
     return(Score);
   }
 
