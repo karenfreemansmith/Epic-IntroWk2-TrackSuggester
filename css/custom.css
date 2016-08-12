@@ -33,23 +33,23 @@ li {
 }
 li.design {
   list-style:url("../img/design.png");
-  background-color: #f2e6ff;
+  background: #f2e6ff;
 }
 li.php {
   list-style:url("../img/php.png");
-  background-color: #ffe6cc;
+  background: #ffe6cc;
 }
 li.ruby {
   list-style:url("../img/ruby.png");
-  background-color: #fcc;
+  background: #fcc;
 }
 li.java {
   list-style:url("../img/java.png");
-  background-color: #e6ffe6;
+  background: #e6ffe6;
 }
 li.csharp {
   list-style:url("../img/cs.png");
-  background-color: #e6f7ff;
+  background: #e6f7ff;
 }
 
 @media only screen and (max-width:991px) {

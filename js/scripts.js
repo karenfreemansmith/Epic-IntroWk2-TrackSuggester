@@ -15,10 +15,17 @@ $(document).ready(function() {
 
   // - display results
   function showResults(readiness, worktype, workplace, interests, activities, values) {
-    var results=getTrack(readiness, worktype, workplace, interests, activities, values);
-
+    var Score=getTrack(readiness, worktype, workplace, interests, activities, values);
+    var results="<ul>"
+      + "<li class='csharp' style='width: "+Score.csharp/5*100+"%'>C#/.NET: " + Score.csharp/5*100 + "%</li>"
+      + "<li class='design' style='width: "+Score.design/5*100+"%'>CSS/Design: " + Score.design/5*100 + "%</li>"
+      + "<li class='java' style='width: "+Score.java/5*100+"%'>Java/Android: " + Score.java/5*100 + "%</li>"
+      + "<li class='ruby' style='width: "+Score.ruby/5*100+"%'>Ruby/Rails: " + Score.ruby/5*100 + "%</li>"
+      + "<li class='php' style='width: "+Score.php/5*100+"%'>PHP/Drupal: " + Score.php/5*100 + "%</li>"
+      + "</ul>";
     $("#results").html(results);
     $("form#survey").hide();
+    $(".tracks").hide();
     $("#results").show();
   }
 });
@@ -38,14 +45,7 @@ function getTrack(readiness, worktype, workplace, interests, activities, values)
     Score=considerInterests(interests, Score);
     Score=considerActivities(activities, Score);
     Score=considerValues(values, Score);
-    //compare scores for each track and return string for best track
-    var results="<h2>Your Results Are: </h2><ul>"
-      + "<li class='csharp'>C#/.NET: " + Score.csharp/5*100 + "%</li>"
-      + "<li class='design'>CSS/Design: " + Score.design/5*100 + "%</li>"
-      + "<li class='java'>Java/Android: " + Score.java/5*100 + "%</li>"
-      + "<li class='ruby'>Ruby/Rails: " + Score.csharp/5*100 + "%</li>"
-      + "<li class='php'>PHP/Drupal: " + Score.php/5*100 + "%</li>"
-    return(results);
+    return(Score);
   }
 
   // - analyze answers and determine best track
