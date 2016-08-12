@@ -1,3 +1,35 @@
 h1 {
   text-align: center;
+  font-size: 4.5em;
+  margin-top: -6%;
+  padding-bottom: 15px;
+  font-family: 'Anonymous Pro', monospace;
+  color: #145252;
+  border-bottom: 2px #145252 solid;
+}
+
+img.logo {
+  width: 50%;
+  margin: auto;
+}
+
+.row.tracks{
+  border-bottom: 2px #145252 solid;
+}
+
+@media only screen and (max-width:991px) {
+  h1 {
+    font-size: 3em;
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  img.logo {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+    margin-top: -2%;
+  }
 }

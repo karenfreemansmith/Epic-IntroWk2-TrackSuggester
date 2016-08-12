@@ -1,3 +1,4 @@
 $(document).ready(function() {
-  alert("jQuery running");
+  //alert("jQuery running");
+  
 });
