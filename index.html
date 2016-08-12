@@ -13,20 +13,223 @@
       <img src="img/logo.png" alt="Epicodus Logo" class="logo">
       <h1>Track Suggester</h1>
       <div class="row tracks">
-        <div class="col-xs-3"><h2>CSS/Design</h2></div>
-        <div class="col-xs-2"><h2>Ruby/Rails</h2></div>
-        <div class="col-xs-3"><h2>Java/Android</h2></div>
-        <div class="col-xs-2"><h2>C#/.NET</h2></div>
-        <div class="col-xs-2"><h2>PHP/Drupal</h2></div>
+        <div class="col-sm-1"><img src="img/css.png" class="img-responsive" alt="css logo"></div>
+        <div class="col-sm-1"><img src="img/java.png" class="img-responsive" alt="java logo"></div>
+        <div class="col-sm-1"><img src="img/php.png" class="img-responsive" alt="php logo"></div>
+        <div class="col-sm-1"><img src="img/cs.png" class="img-responsive" alt="cs logo"></div>
+        <div class="col-sm-1"><img src="img/ruby.png" class="img-responsive" alt="ruby logo"></div>
+        <div class="col-sm-2"><img src="img/js.png" class="img-responsive" alt="js logo"></div>
+        <div class="col-sm-1"><img src="img/rails.png" class="img-responsive" alt="rails logo"></div>
+        <div class="col-sm-1"><img src="img/net.png" class="img-responsive" alt="net logo"></div>
+        <div class="col-sm-1"><img src="img/drupal.png" class="img-responsive" alt="drupal logo"></div>
+        <div class="col-sm-1"><img src="img/android.png" class="img-responsive" alt="android logo"></div>
+        <div class="col-sm-1"><img src="img/design.png" class="img-responsive" alt="design logo"></div>
       </div>
-      <form>
+      <!-- popup modal form to ask name and location... -->
+      <form role="form">
         <div class="row">
-          <label for="q1"></label>
-          <label for="q2"></label>
-          <label for="q3"></label>
-          <label for="q4"></label>
-          <label for="q5"></label>
+          <div class="col-sm-4 form-group">
+            <h3>When would you like to start your learning?</h3>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="startdate" value="1016" checked>
+                October 2016
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="startdate" value="0117">
+                January 2017
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="startdate" value="0317">
+                March 2017
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="startdate" value="0517">
+                May 2017
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="startdate" value="0817">
+                August 2017
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <h3>Which project would you be most excited about working on?</h3>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="project" value="gameApp" checked>
+                The next PokemonGo!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="project" value="startupApp">
+                The next Uber
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="project" value="creativeApp">
+                The next version of Adobe Creative Cloud
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="project" value="socialApp">
+                The next Facebook
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="project" value="businessApp">
+                The next E-Bay
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <h3>Which kind of organization would you prefer to work for?</h3>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="organization" value="non-profit" checked>
+                Non-Profit
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="organization" value="government">
+                Government
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="organization" value="startup">
+                Local Startup
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="organization" value="corporation">
+                Large, well-known corporation
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="organization" value="freelance">
+                I want to freelance, or start my own company.
+              </label>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-4 form-group">
+            <h3>Which subjects did you enjoy most in school?</h3>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="subjects" value="math" checked>
+                Math, Computer Science, Critical Thinking
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="subjects" value="english">
+                Writing, Literature, Foreign Languages
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="subjects" value="science">
+                Science, Woodworking, Cooking
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="subjects" value="art">
+                Art, Music, Photography
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="subjects" value="business">
+                Business, Accounting, Finance
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <h3>What kind of activities do you enjoy in your free time?</h3>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="freetime" value="games" checked>
+                Video Games, Board Games, Card Games
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="freetime" value="literary">
+                Reading, Writing, Philosophical Conversations
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="freetime" value="social">
+                Exploring the City, Attending Events, Hanging Out
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="freetime" value="loner">
+                Gardening, Home Repair, Watching TV
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="freetime" value="work">
+                Free-time? What is that?
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <h3>When surfing the web, which is most important to you?</h3>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="value" value="" checked>
+                Works on my phone
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="value" value="">
+                Looks fantastic
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="value" value="">
+                Does what it's supposed to
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="value" value="">
+                All of the above
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input class="form-control" type="radio" name="value" value="">
+                None of the above
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-info">Get a Suggestion</button>
       </form>
     </div>
     <script src="js/jquery-3.1.0.js"></script>

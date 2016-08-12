@@ -13,14 +13,25 @@ img.logo {
   margin: auto;
 }
 
-.row.tracks{
-  border-bottom: 2px #145252 solid;
+.tracks img {
+  margin: auto;
+}
+
+div.radio {
+  line-height:2.3;
+}
+
+input.form-control {
+  margin-top: 0;
 }
 
 @media only screen and (max-width:991px) {
   h1 {
     font-size: 3em;
     text-align: right;
+  }
+  .tracks {
+    display: none;
   }
 }
 
@@ -32,4 +43,5 @@ img.logo {
     font-size: 2em;
     margin-top: -2%;
   }
+
 }
