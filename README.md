@@ -17,7 +17,7 @@ A Track Suggester webpage (using HTML, CSS, JavaScript and JQuery) that asks stu
 For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 
 ### Known Issues
-* No bugs, only undocumented features!
+* Radio buttons are behaving badly in some browsers.
 
 ### Technologies Used
 ###### HTML, CSS, Bootstrap, JavaScript, jQuery
