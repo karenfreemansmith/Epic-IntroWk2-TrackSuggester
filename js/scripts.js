@@ -45,94 +45,102 @@ function getTrack(readiness, worktype, workplace, interests, activities, values)
     Score=considerInterests(interests, Score);
     Score=considerActivities(activities, Score);
     Score=considerValues(values, Score);
-    Score.csharp=Score.csharp/5*100; //converts raw score to percentage
-    Score.design=Score.design/5*100;
-    Score.java=Score.java/5*100;
-    Score.ruby=Score.ruby/5*100;
-    Score.php=Score.php/5*100;
+    Score.csharp=Score.csharp/20*100; //converts raw score to percentage
+    Score.design=Score.design/20*100;
+    Score.java=Score.java/20*100;
+    Score.ruby=Score.ruby/20*100;
+    Score.php=Score.php/20*100;
     return(Score);
   }
 
   // - analyze answers and determine best track
   function considerReadiness(readiness, Score) {
     if(readiness==="1016") {
-      Score.csharp+=1;
-      Score.ruby+=1;
-      Score.design+=1;
+      Score.csharp+=6;
+      Score.ruby+=6;
+      Score.design+=2;
     }
     if(readiness==="0117") {
-      Score.php+=1;
-      Score.java+=1;
-      Score.design+=1;
+      Score.php+=6;
+      Score.java+=6;
+      Score.design+=2;
     }
     if(readiness==="0317") {
-      Score.csharp+=1;
-      Score.ruby+=1;
-      Score.design+=1;
+      Score.csharp+=6;
+      Score.ruby+=6;
+      Score.design+=2;
     }
     if(readiness==="0517") {
-      Score.php+=1;
-      Score.java+=1;
-      Score.design+=1;
+      Score.php+=6;
+      Score.java+=6;
+      Score.design+=2;
     }
     if(readiness==="0817") {
-      Score.csharp+=1;
-      Score.ruby+=1;
-      Score.design+=1;    }
+      Score.csharp+=6;
+      Score.ruby+=6;
+      Score.design+=2;    }
     return Score;
   }
   function considerWorktype(worktype, Score) {
     if(worktype==="gameApp") {
-      Score.java+=1;
+      Score.java+=3;
+      Score.ruby+=2;
     }
     if(worktype==="startupApp") {
-      Score.ruby+=1;
+      Score.ruby+=3;
     }
     if(worktype==="creativeApp") {
-      Score.design+=1;
+      Score.design+=2;
+      Score.csharp+=3;
+      Score.java+=3;
     }
     if(worktype==="socialApp") {
-      Score.php+=1;
+      Score.php+=4;
+      Score.ruby+=2;
     }
     if(worktype==="businessApp") {
-      Score.csharp+=1;
+      Score.csharp+=4;
+      Score.java+=3;
     }
     return Score;
   }
   function considerWorkplace(workplace, Score) {
     if(workplace==="non-profit") {
-      Score.php+=1;
-      Score.ruby+=1;
+      Score.php+=2;
+      Score.ruby+=2;
     }
     if(workplace==="government") {
-      Score.php+=1;
-      Score.net+=1;
+      Score.php+=2;
+      Score.net+=3;
     }
     if(workplace==="startup") {
-      Score.ruby+=1;
-      Score.java+=1;
+      Score.ruby+=3;
+      Score.java+=2;
     }
     if(workplace==="corporation") {
-      Score.csharp+=1;
-      Score.java+=1;
+      Score.csharp+=4;
+      Score.java+=2;
     }
     if(workplace==="freelance") {
-      Score.design+=1;
+      Score.design+=5;
+      Score.php+=3;
     }
     return Score;
   }
   function considerInterests(interests, Score) {
     if(interests==="math") {
-      Score.java+=1;
+      Score.java+=2;
+      Score.csharp+=1;
     }
     if(interests==="english") {
-      Score.php+=1;
-    }
-    if(interests==="science") {
+      Score.php+=2;
       Score.ruby+=1;
     }
+    if(interests==="science") {
+      Score.ruby+=4;
+    }
     if(interests==="art") {
-      Score.design+=1;
+      Score.design+=5;
     }
     if(interests==="business") {
       Score.csharp+=1;
@@ -141,41 +149,41 @@ function getTrack(readiness, worktype, workplace, interests, activities, values)
   }
   function considerActivities(activities, Score) {
     if(activities==="games") {
-      Score.java+=1;
+      Score.java+=3;
     }
     if(activities==="literary") {
-      Score.php+=1;
+      Score.php+=2;
     }
     if(activities==="social") {
-      Score.ruby+=1;
+      Score.ruby+=2;
     }
     if(activities==="loner") {
-      Score.design+=1;
+      Score.design+=2;
     }
     if(activities==="work") {
-      Score.csharp+=1;
+      Score.csharp+=2;
     }
     return Score;
   }
   function considerValues(values, Score) {
     if(values==="mobile") {
-      Score.java+=1;
+      Score.java+=4;
     }
     if(values==="look") {
-      Score.design+=1;
+      Score.design+=4;
     }
     if(values==="function") {
-      Score.ruby+=1;
-      Score.php+=1;
-      Score.java+=1;
-      Score.csharp+=1;
+      Score.ruby+=3;
+      Score.php+=3;
+      Score.java+=3;
+      Score.csharp+=3;
     }
     if(values==="all") {
-      Score.design+=1;
-      Score.ruby+=1;
-      Score.php+=1;
-      Score.java+=1;
-      Score.csharp+=1;
+      Score.design+=2;
+      Score.ruby+=2;
+      Score.php+=2;
+      Score.java+=2;
+      Score.csharp+=2;
     }
     if(values==="none") {
       Score.design=0;
