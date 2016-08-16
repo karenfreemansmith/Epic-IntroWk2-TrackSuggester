@@ -17,11 +17,11 @@ $(document).ready(function() {
   function showResults(readiness, worktype, workplace, interests, activities, values) {
     var Score=getTrack(readiness, worktype, workplace, interests, activities, values);
     var results="<ul>"
-      + "<li class='csharp' style='width: "+Score.csharp+"%'>C#/.NET: " + Score.csharp + "%</li>"
-      + "<li class='design' style='width: "+Score.design+"%'>CSS/Design: " + Score.design + "%</li>"
-      + "<li class='java' style='width: "+Score.java+"%'>Java/Android: " + Score.java + "%</li>"
-      + "<li class='ruby' style='width: "+Score.ruby+"%'>Ruby/Rails: " + Score.ruby + "%</li>"
-      + "<li class='php' style='width: "+Score.php+"%'>PHP/Drupal: " + Score.php + "%</li>"
+      + "<li class='csharp' style='width: "+Score.csharp+"%'>C#/.NET: " + Score.csharp.toFixed(0) + "%</li>"
+      + "<li class='design' style='width: "+Score.design+"%'>CSS/Design: " + Score.design.toFixed(0) + "%</li>"
+      + "<li class='java' style='width: "+Score.java+"%'>Java/Android: " + Score.java.toFixed(0) + "%</li>"
+      + "<li class='ruby' style='width: "+Score.ruby+"%'>Ruby/Rails: " + Score.ruby.toFixed(0) + "%</li>"
+      + "<li class='php' style='width: "+Score.php+"%'>PHP/Drupal: " + Score.php.toFixed(0) + "%</li>"
       + "</ul>";
     $("#results").html(results);
     $("form#survey").hide();
