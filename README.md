@@ -8,21 +8,22 @@ __Version 1.0.0: August 12, 2016__
 __*Final Project for Epicodus Intro to Programming Week 2*__
 A Track Suggester webpage (using HTML, CSS, JavaScript and JQuery) that asks students a series of questions about themselves and provides a track suggestion based on their answers.
 
-### Setup/Installation
-* Clone (git clone https://github.com/karenfreemansmith/track-suggester)
-* Download and Extract (no special installation needed)
-* [Click here to view on gh-pages](http://karenfreemansmith.github.io/track-suggester)
+## Technologies Used
+HTML, CSS
 
-### Support & Contact
-For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
+## Setup/Installation
+* [View on Github Pages](https://karenfreemansmith.github.io/EpicIntroWk1-PetWebsite)
+* _OR_
+* Clone diectory 
+* Open index.html in your favorite browser
 
-### Known Issues
+## Support & Contact
+For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
+
+## Known Issues
 * None
 
-### Technologies Used
-###### HTML, CSS, Bootstrap, JavaScript, jQuery
-
-### Legal
+## Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 **_Karen Freeman-Smith_**
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.
